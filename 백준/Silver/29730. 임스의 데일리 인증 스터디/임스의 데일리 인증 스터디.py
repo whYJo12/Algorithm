@@ -11,11 +11,11 @@ def function():
         else:
             etcList.append(study)
 
-    bojList.sort()
-    bojList.sort(key=lambda x: len(x))
+    bojList.sort() # 사전 순 정렬
+    bojList.sort(key=lambda x: len(x)) # 길이 순 정렬
 
-    etcList.sort()
-    etcList.sort(key=lambda x: len(x))
+    etcList.sort() # 사전 순 정렬
+    etcList.sort(key=lambda x: len(x)) # 길이 순 정렬
 
     studyList = etcList + bojList
 
