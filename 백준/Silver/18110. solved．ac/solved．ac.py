@@ -1,9 +1,4 @@
 import sys
-import statistics
-import decimal
-import math
-
-EPS = 1e-9
 def my_round(val):
     return int(val) + 1 if val - int(val) >= 0.5 else int(val)
 
@@ -17,7 +12,7 @@ def function():
 
         apply_truc = sorted(level)[trimmedMean: N - trimmedMean]
         mean = my_round(sum(apply_truc) / len(apply_truc))
-        
+
         print(mean)
     else:
         print(0)
